@@ -44,4 +44,23 @@ router.get('/newuser', function(req, res) {
   });
 });
 
+/* POST to add new user to db */
+router.post('/createuser', function(req, res) {
+  var db = req.db;
+  var userName = req.body.username;
+  var userAnimal = req.body.animal;
+  var users = db.get('users');
+  users.insert({
+    'username' : userName,
+    'animal' : userAnimal
+  }, function (error, doc) {
+    if (error) {
+      res.send("Could not create new user.");
+    } else {
+      res.location('users');
+      res.redirect('users');
+    }
+  });
+});
+
 module.exports = router;
