@@ -1,3 +1,3 @@
-This is a step by step tutorial for building a web application using Node.js, Express.js and MongoDB. The full tutorial can be read on my blog at:
+This is a simple application built with Node.js, Express.js and MongoDB. This app corresponds with a tutorial I prepared. The full tutorial can be read on my blog at:
 
-Node.js Tutorial: Getting Started with Node, Express and MongoDB
+<a href="" target="_blank">Node.js Tutorial: Getting Started with Node, Express and MongoDB</a>
