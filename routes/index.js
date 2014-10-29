@@ -37,4 +37,11 @@ router.get('/users', function(req, res) {
   });
 });
 
+/* GET new user page. */
+router.get('/newuser', function(req, res) {
+  res.render('newuser', { 
+    title: 'New User'
+  });
+});
+
 module.exports = router;

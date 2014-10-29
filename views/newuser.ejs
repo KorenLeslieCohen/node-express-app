@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include partials/head %>
+  </head>
+  <body>
+    <% include partials/nav %>
+    <h1><%= title %></h1>
+    <form name="newuser" method="post" action="/adduser">
+      <input type="text" name="username" placeholder="username"><br>
+      <input type="text" name="animal" placeholder="animal"><br>
+      <input type="submit" value="Add User">
+    </form>
+  </body>
+</html>
