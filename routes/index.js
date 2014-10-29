@@ -22,4 +22,19 @@ router.get('/newroute', function(req, res) {
   });
 });
 
+/* GET users page. */
+// extracting the db object passedto http request
+// fills docs variable with database docs(user data)
+// renders page
+router.get('/users', function(req, res) {
+  var db = req.db;
+  var users = db.get('users');
+  users.find({},{}, function(e, docs){
+    res.render('users', { 
+      title: 'Users',
+      'users': docs 
+    });
+  });
+});
+
 module.exports = router;

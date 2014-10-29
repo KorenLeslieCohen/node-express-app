@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <% include partials/head %>
+
+  </head>
+  <body>
+
+    <% include partials/nav %>
+
+    <h1><%= title %></h1>
+
+    <ul>
+      <% users.forEach(function(user) { %>
+        <li><%= user.username %> is a <%= user.animal %>.</li>
+      <% }); %>
+    </ul>
+
+  </body>
+</html>
