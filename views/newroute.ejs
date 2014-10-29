@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <% include partials/head %>
-
   </head>
   <body>
-
     <% include partials/nav %>
-
     <h1>Welcome to Your <%= title %>.</h1>
-
     <h1>Animals</h1>
     <ul>
       <% animals.forEach(function(animal) { %>
         <li><%= animal.name %> is a <%= animal.type %>.</li>
       <% }); %>
     </ul>
-
   </body>
 </html>
